@@ -36,7 +36,7 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 
 <p align="center">
-<img src="./test_images/solidYellowLeft.jpg" alt="Sentiment Analysis Datasets " />
+<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="100" height="100" />
 <p align="center">
   
 ### 2. Identify potential shortcomings with your current pipeline
