@@ -33,11 +33,16 @@ In order to draw a single line on the left and right lanes, I modified the hough
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+|<p align="center">
+<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="300" height="300" />
+<p align="center"> | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
-<p align="center">
-<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="100" height="100" />
-<p align="center">
+
+
   
 ### 2. Identify potential shortcomings with your current pipeline
 
