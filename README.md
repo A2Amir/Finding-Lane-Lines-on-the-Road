@@ -18,20 +18,25 @@ The goal of this project are the following: In this project, we will use the too
 
 ### 1.The pipeline:
 
-The pipeline consisted of 6 steps.
+The pipeline consisted of 7 steps.
 
-0.  First read  the orginal image
+1.  First read  the orginal image
  <p align="right">
-<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="300" height="300" />
+<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="500" height="300" />
 <p align="right">
 
 
-1.  Then I converted the images to grayscale
-2.  I applied on the grayscale image a gussian filter with the kernel of size 5.
-3.  After determining the min and max thresholds for the canny transformation, I found the edges.
-4.  on the canny image, the region of the interest was drwan by using vertices.
-5.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
-6.  At the end I added the weights of the original image and the lane line image.
+2.  Then I converted the images to grayscale
+
+ <p align="right">
+<img src="./exaples/grayscale.png" alt="grayscale image " width="500" height="300" />
+<p align="right">
+  
+3.  I applied on the grayscale image a gussian filter with the kernel of size 5.
+4.  After determining the min and max thresholds for the canny transformation, I found the edges.
+5.  on the canny image, the region of the interest was drwan by using vertices.
+6.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
+7.  At the end I added the weights of the original image and the lane line image.
 
 
 In order to draw a single line on the left and right lanes, I modified the hough_lines() function by sperating slopes and intercepts belonging to the left  or right lane line using np.plolyfit then to calculate the coordinates of the first and end points of each lane line I averaged them on the zero axis and the make_coordinate function was used to calculate the coordinates of the left and right lane lines.
