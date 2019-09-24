@@ -6,9 +6,16 @@
 The goal of this project are the following:
 
 In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the video clip "raw-lines-example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
-[<img src="./test_videos/solidWhiteRight.mp4" width="50%">](test_videos/solidWhiteRight.mp4)
----
 
+<video controls="controls">
+  <source type="video/mp4" src="./test_videos/solidWhiteRight.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
+
+
+---
+![Video](./test_videos/solidWhiteRight.mp4)
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
