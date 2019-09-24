@@ -71,4 +71,4 @@ In order to draw a single line on the left and right lanes, I modified the hough
 
 ![Video clip](./test_videos_output/solidYellowLeft.mp4) 
 ![Video clip](./test_videos_output/solidWhiteRight.mp4) 
-
+![Video clip](./test_videos_output/challenge.mp4) 
