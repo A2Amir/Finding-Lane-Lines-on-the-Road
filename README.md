@@ -16,16 +16,16 @@ The goal of this project are the following: In this project, we will use the too
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1.The pipeline:
 
-My pipeline consisted of 6 steps.
+The pipeline consisted of 6 steps.
 
-1.First, I converted the images to grayscale
-2.I applied on the grayscale image a gussian filter with the kernel of size 5.
-3.After determining the min and max thresholds for the canny transformation, I found the edges.
-4.on the canny image, the region of the interest was drwan by using vertices.
-5.Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
-6.at the end I added the weights of the original image and the lane line image.
+1.  First, I converted the images to grayscale
+2.  I applied on the grayscale image a gussian filter with the kernel of size 5.
+3.  After determining the min and max thresholds for the canny transformation, I found the edges.
+4.  on the canny image, the region of the interest was drwan by using vertices.
+5.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
+6.  At the end I added the weights of the original image and the lane line image.
 
 
 In order to draw a single line on the left and right lanes, I modified the hough_lines() function by sperating slopes and intercepts belonging to the left  or right lane line using np.plolyfit then to calculate the coordinates of the first and end points of each lane line I averaged them on the zero axis and the make_coordinate function was used to calculate the coordinates of the left and right lane lines.
