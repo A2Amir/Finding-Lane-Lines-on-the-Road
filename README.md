@@ -3,15 +3,13 @@
 
 **Finding Lane Lines on the Road**
 
-The goal of this project are the following:
-
-In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the video clip "raw-lines-example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
+The goal of this project are the following: In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the ![Video clip](./examples/raw-lines-example.mp4) "raw-lines-example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
 
 <video controls="controls">
-  <source type="video/mp4" src="./test_videos/solidWhiteRight.mp4"></source>
+  <source type="video/mp4" src="./examples/raw-lines-example.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
-![Video](./test_videos/solidWhiteRight.mp4)
+
 
 
 ---
