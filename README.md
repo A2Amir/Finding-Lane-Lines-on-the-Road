@@ -33,11 +33,32 @@ The pipeline consisted of 7 steps.
 <p align="right">
   
 3.  I applied on the grayscale image a gussian filter with the kernel of size 5.
-4.  After determining the min and max thresholds for the canny transformation, I found the edges.
-5.  on the canny image, the region of the interest was drwan by using vertices.
-6.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
-7.  At the end I added the weights of the original image and the lane line image.
 
+ <p align="right">
+<img src="./examples/blur.png" alt="blur image " width="500" height="300" />
+<p align="right">
+  
+4.  After determining the min and max thresholds for the canny transformation, I found the edges.
+
+ <p align="right">
+<img src="./examples/canny.png" alt="canny image " width="500" height="300" />
+<p align="right">
+  
+5.  on the canny image, the region of the interest was drwan by using vertices.
+ <p align="right">
+<img src="./examples/RoI.png" alt="RoI image " width="500" height="300" />
+<p align="right">
+  
+
+6.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
+
+ <p align="right">
+<img src="./examples/lines_img.png" alt="lines_img image " width="500" height="300" />
+<p align="right">
+7.  At the end I added the weights of the original image and the lane line image.
+ <p align="right">
+<img src="./examples/weighted_img.png" alt="weighted_img image " width="500" height="300" />
+<p align="right">
 
 In order to draw a single line on the left and right lanes, I modified the hough_lines() function by sperating slopes and intercepts belonging to the left  or right lane line using np.plolyfit then to calculate the coordinates of the first and end points of each lane line I averaged them on the zero axis and the make_coordinate function was used to calculate the coordinates of the left and right lane lines.
 
