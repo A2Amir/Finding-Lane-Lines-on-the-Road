@@ -11,11 +11,11 @@ In this project, we will use the tools to identify lane lines on the road.  we w
   <source type="video/mp4" src="./test_videos/solidWhiteRight.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
-
+![Video](./test_videos/solidWhiteRight.mp4)
 
 
 ---
-![Video](./test_videos/solidWhiteRight.mp4)
+
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
