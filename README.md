@@ -14,7 +14,6 @@ The goal of this project are the following: In this project, we will use the too
 
 ---
 
-### Reflection
 
 ### 1.The pipeline:
 
@@ -68,19 +67,7 @@ In order to draw a single line on the left and right lanes, I modified the hough
 
 
   
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Test on Videos
 
-<video width="960" height="540" controls>
-  <source src="./test_videos/solidWhiteRight.mp4}">
-</video>
-One potential shortcoming would be what would happen when curves will be tilted.
-
-Another shortcoming could be in determination of vertices and regulation of parameters. 
-
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be in curven when auto goes left or right.
-
-Another potential improvement could be to automatic determination of parameters and verices.
+! [Video clip](./test_videos_output/solidYellowLeft.mp4) 
 
