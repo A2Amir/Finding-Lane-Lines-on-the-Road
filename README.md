@@ -18,7 +18,8 @@ The goal of this project are the following: In this project, we will use the too
 
 ### 1.The pipeline:
 
-The pipeline consisted of 7 steps.
+The pipeline consisted of 7 steps:I'd like to include images to show how the pipeline works, here is how to include an image: 
+
 
 1.  First read  the orginal image
  <p align="right">
@@ -62,7 +63,6 @@ The pipeline consisted of 7 steps.
 
 In order to draw a single line on the left and right lanes, I modified the hough_lines() function by sperating slopes and intercepts belonging to the left  or right lane line using np.plolyfit then to calculate the coordinates of the first and end points of each lane line I averaged them on the zero axis and the make_coordinate function was used to calculate the coordinates of the left and right lane lines.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 
 
@@ -70,7 +70,9 @@ If you'd like to include images to show how the pipeline works, here is how to i
   
 ### 2. Identify potential shortcomings with your current pipeline
 
-
+<video width="960" height="540" controls>
+  <source src="./test_videos/solidWhiteRight.mp4}">
+</video>
 One potential shortcoming would be what would happen when curves will be tilted.
 
 Another shortcoming could be in determination of vertices and regulation of parameters. 
