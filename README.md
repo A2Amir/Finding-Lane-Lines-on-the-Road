@@ -1,40 +1,47 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+The goal of this project are the following: In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the [Video clip](./examples/P1_example.mp4) "P1_example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
+
+<video controls="controls">
+  <source type="video/mp4" src="./examples/raw-lines-example.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
+
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1.The pipeline:
 
-My pipeline consisted of 6 steps.
+The pipeline consisted of 6 steps.
 
-1.First, I converted the images to grayscale
-2.I applied on the grayscale image a gussian filter with the kernel of size 5.
-3.After determining the min and max thresholds for the canny transformation, I found the edges.
-4.on the canny image, the region of the interest was drwan by using vertices.
-5.Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
-6.at the end I added the weights of the original image and the lane line image.
+0.  First read  the orginal image
+ <p align="right">
+<img src="./test_images/solidYellowLeft.jpg" alt="orginal image " width="300" height="300" />
+<p align="right">
+
+
+1.  Then I converted the images to grayscale
+2.  I applied on the grayscale image a gussian filter with the kernel of size 5.
+3.  After determining the min and max thresholds for the canny transformation, I found the edges.
+4.  on the canny image, the region of the interest was drwan by using vertices.
+5.  Based on the region of the interest and with help of the hough_lines function the lane lines were extracted.
+6.  At the end I added the weights of the original image and the lane line image.
 
 
 In order to draw a single line on the left and right lanes, I modified the hough_lines() function by sperating slopes and intercepts belonging to the left  or right lane line using np.plolyfit then to calculate the coordinates of the first and end points of each lane line I averaged them on the zero axis and the make_coordinate function was used to calculate the coordinates of the left and right lane lines.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
 
 
+
+  
 ### 2. Identify potential shortcomings with your current pipeline
 
 
