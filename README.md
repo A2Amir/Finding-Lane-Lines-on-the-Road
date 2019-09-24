@@ -29,7 +29,7 @@ The pipeline consisted of 7 steps.
 2.  Then I converted the images to grayscale
 
  <p align="right">
-<img src="./exaples/grayscale.png" alt="grayscale image " width="500" height="300" />
+<img src="./examples/grayscale.png" alt="grayscale image " width="500" height="300" />
 <p align="right">
   
 3.  I applied on the grayscale image a gussian filter with the kernel of size 5.
