@@ -32,9 +32,13 @@ In order to draw a single line on the left and right lanes, I modified the hough
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
 
 
+
+<p align="center">
+<img src="./test_images/solidYellowLeft.jpg" alt="Sentiment Analysis Datasets " />
+<p align="center">
+  
 ### 2. Identify potential shortcomings with your current pipeline
 
 
