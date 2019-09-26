@@ -3,7 +3,7 @@
 
 
 
-The goal of this project are the following: In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the [Video clip](./examples/P1_example.mp4) "P1_example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
+The goal of [this project](https://github.com/A2Amir/Finding-Lane-Lines-on-the-Road/blob/master/P1.ipynb) are the following: In this project, we will use the tools to identify lane lines on the road.  we will  develope a pipeline on a series of individual images, and later apply the result to a video stream (really just a series of images). Check out the [Video clip](./examples/P1_example.mp4) "P1_example.mp4" (also contained in this repository) to see what the output should look like after using the helper functions below. 
 
 <video controls="controls">
   <source type="video/mp4" src="./examples/raw-lines-example.mp4"></source>
